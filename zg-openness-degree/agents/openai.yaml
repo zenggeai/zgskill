@@ -1,0 +1,4 @@
+interface:
+  display_name: "ZG · 打开度"
+  short_description: "用打开度框架诊断个人封闭卡点，并设计安全、具体、可复盘的行动练习"
+  default_prompt: "Use $zg-openness-degree to diagnose what is closing me off and give me one practical opening exercise."

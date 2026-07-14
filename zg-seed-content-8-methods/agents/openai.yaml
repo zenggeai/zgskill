@@ -1,0 +1,4 @@
+interface:
+  display_name: "ZG · 种草力 8 术 Lite"
+  short_description: "用八种术式生成、改写或诊断真实可信的朋友圈与私域种草内容"
+  default_prompt: "Use $zg-seed-content-8-methods to write one WeChat Moments post for my offer without fabricating evidence."
