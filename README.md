@@ -206,7 +206,7 @@ zgskill/
 
 ## 作者与支持
 
-作者：[曾哥](https://github.com/zenggeai)
+作者：[曾哥](https://github.com/zenggeai)（微信：zengge198406 ）
 
 - 喜欢这个项目，可以给仓库一个 [Star](https://github.com/zenggeai/zgskill)。
 - 发现问题或想提交需求，请前往 [GitHub Issues](https://github.com/zenggeai/zgskill/issues)。
