@@ -3,7 +3,7 @@ name: zg-skill-publisher
 description: 将用户给出的文档、文件夹或已有能力整理成 ZG Skills 仓库里的标准 Skill，并发布到 GitHub。适用于“帮我把这个文档变成 skill”“整理成标准 skill 格式”“命名要用 zg 统一”“更新 README 并发布到 GitHub”“检查不要上传配置/输出稿/敏感文件”等任务。默认目标仓库是 zenggeai/zgskill，所有对外 Skill 名必须使用 `zg-` 前缀。
 ---
 
-# 曾哥skill发布
+# ZG Skill Publisher
 
 把用户给出的材料整理成可发布的 ZG Skill。目标不是单纯搬文件，而是产出一个可被 Agent 正确发现、安装、调用，并且不会误传隐私或运行数据的标准 Skill。
 
@@ -90,7 +90,7 @@ skills/<zg-skill-name>/
 
 ```yaml
 interface:
-  display_name: "曾哥skill发布"
+  display_name: "ZG Skill Publisher"
   short_description: "整理并发布 ZG Skills 到 GitHub"
   default_prompt: "Use $zg-skill-publisher to turn a document into a standardized ZG Skill and publish it to GitHub."
 ```
