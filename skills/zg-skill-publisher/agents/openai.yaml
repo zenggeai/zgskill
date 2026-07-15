@@ -1,4 +1,4 @@
 interface:
-  display_name: "ZG Skill Publisher"
+  display_name: "曾哥skill发布"
   short_description: "整理并发布 ZG Skills 到 GitHub"
   default_prompt: "Use $zg-skill-publisher to turn a document into a standardized ZG Skill and publish it to GitHub."
