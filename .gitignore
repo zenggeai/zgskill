@@ -1,0 +1,5 @@
+.DS_Store
+
+# Source workspace used to build the publishable skill.
+# Publish the cleaned skill under skills/wewrite instead.
+/wewrite/

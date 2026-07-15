@@ -1,0 +1,32 @@
+# Credentials
+config.yaml
+
+# User data generated at runtime
+style.yaml
+history.yaml
+playbook.md
+writing-config.yaml
+optimization-results.tsv
+corpus/
+lessons/
+clients/
+
+# Generated output
+output/
+
+# User-specific exemplar library
+references/exemplars/*.md
+references/exemplars/index.yaml
+
+# Python and build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+build/
+dist/
+
+# macOS and IDE files
+.DS_Store
+.vscode/
+.idea/
