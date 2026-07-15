@@ -1,0 +1,4 @@
+interface:
+  display_name: "反常识公众号文章"
+  short_description: "反常识公众号长文写作结构模板"
+  default_prompt: "Use $zg-counterintuitive-wechat-article to draft a counterintuitive WeChat Official Account article."
