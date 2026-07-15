@@ -1,4 +1,4 @@
 interface:
   display_name: "WeWrite"
   short_description: "微信公众号内容全流程助手"
-  default_prompt: "Use $wewrite to write and format a WeChat Official Account article."
+  default_prompt: "Use $zg-wewrite to write and format a WeChat Official Account article."
