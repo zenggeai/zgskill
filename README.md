@@ -2,7 +2,7 @@
 
 > 面向创业者、一人公司和内容创作者的中文 AI Skills。把真实处境、业务材料和当前卡点交给 Agent，获得清晰判断、可直接使用的交付物，以及一个能立刻开始的下一步。
 
-[![Skills](https://img.shields.io/badge/Skills-4-111111.svg)](#skill-全目录)
+[![Skills](https://img.shields.io/badge/Skills-5-111111.svg)](#skill-全目录)
 [![skills.sh](https://skills.sh/b/zenggeai/zgskill)](https://skills.sh/zenggeai/zgskill)
 [![GitHub stars](https://img.shields.io/github/stars/zenggeai/zgskill?style=flat&color=111111)](https://github.com/zenggeai/zgskill/stargazers)
 
@@ -37,6 +37,7 @@ Agent 完成诊断、生成或改写
 | 不知道朋友圈该发什么，或者写出来总像在硬卖 | 适合当前材料的主术式和一条可直接发布的中文文案 |
 | 有用户反馈、真实案例或一个反常识观点，却不知道怎么讲清楚 | 单一内容目标、证据链检查和结构化成稿 |
 | 已经写好一条内容，但担心夸大、空泛、压迫感强 | 当前术式判断、最影响效果的 1–3 个问题和局部修改方向 |
+| 遇到结果异常，却只能归因为“我水平不行”或“内容不好” | 基于关键证据淘汰错误解释，定位真正值得解决的问题 |
 
 ## 快速开始
 
@@ -54,7 +55,13 @@ $zg-seed-content-8-methods
 我没有可公开的案例和数据，不要帮我编，也不要写得太营销。
 ```
 
-不知道选哪个 Skill 时，只需先判断你要处理的是“人的打开与行动”，还是“内容的生成与表达”。
+```text
+$zg-socratic-problem-locator
+我最近连续发布 20 条短视频，播放量都没有超过 1 万。
+先别急着给方案，请根据已有数据帮我定位真正的问题。
+```
+
+不知道选哪个 Skill 时，先判断你要处理的是“问题尚未定位”“人的打开与行动”，还是“内容的生成与表达”。
 
 ## 能力一览
 
@@ -67,6 +74,7 @@ $zg-seed-content-8-methods
 | 设计一组连续内容 | `$zg-seed-content-8-methods` | 内容布局、术式交替和 7 条最小排期 |
 | 一句话生成公众号文章并保存到草稿箱 | `$zg-wewrite` | 选题、框架、正文、SEO、配图、排版与草稿箱 |
 | 写反常识公众号长文 | `$zg-counterintuitive-wechat-article` | 标题、现象、观点、方法和金句收尾 |
+| 从模糊困惑、异常结果或草率归因中定位真问题 | `$zg-socratic-problem-locator` | 当前断点、被推翻解释、关键未知和最小验证动作 |
 
 ## 安装
 
@@ -87,6 +95,7 @@ npx -y skills add zenggeai/zgskill -g --skill zg-openness-degree
 npx -y skills add zenggeai/zgskill -g --skill zg-seed-content-8-methods
 npx -y skills add zenggeai/zgskill -g --skill zg-wewrite
 npx -y skills add zenggeai/zgskill -g --skill zg-counterintuitive-wechat-article
+npx -y skills add zenggeai/zgskill -g --skill zg-socratic-problem-locator
 ```
 
 ### 先查看可安装的 Skills
@@ -103,6 +112,7 @@ npx -y skills add zenggeai/zgskill --list
 npx -y skills update zg-openness-degree zg-seed-content-8-methods -g
 npx -y skills update zg-wewrite -g
 npx -y skills update zg-counterintuitive-wechat-article -g
+npx -y skills update zg-socratic-problem-locator -g
 ```
 
 更新只会同步 Skill 文件。你在对话中提供的材料和 Agent 中的其他个人数据，不属于本仓库的更新范围。
@@ -131,8 +141,23 @@ ZG Skills 的重点不是一次给出尽可能多的建议，而是处理此刻�
 - 想按学习、沟通、管理、亲子或情绪场景选择练习，阅读 [`practice-library.md`](skills/zg-openness-degree/references/practice-library.md)。
 - 想了解种草力 8 术的选择条件、结构模板和诊断要点，阅读 [`methods.md`](skills/zg-seed-content-8-methods/references/methods.md)。
 - 想设计连续朋友圈的内容结构与最小排期，阅读 [`content-layout.md`](skills/zg-seed-content-8-methods/references/content-layout.md)。
+- 想把“苏格拉底问题定位”方法复制给其他 AI，阅读 [`standalone-prompt.md`](skills/zg-socratic-problem-locator/references/standalone-prompt.md)。
 
 ## Skill 全目录
+
+### ZG · 苏格拉底问题定位
+
+`$zg-socratic-problem-locator`
+
+把 Agent 的专业判断与苏格拉底式检验结合起来：先使用已有上下文和材料形成少量候选解释，再用一个最有区分度的问题寻找关键证据、推翻错误解释，最后定位成可验证的问题。它不会机械追问，也不会把“水平不行”“内容不好”当成原因。
+
+适合这样问：
+
+- “我做了很多内容但一直没结果，先别给方案，帮我定位真正的问题。”
+- “我觉得可能是我能力不行，你帮我检查这个判断是否成立。”
+- “这是平台数据截图，请结合决定性证据重新判断问题在哪里。”
+
+常见产出：自然短对话 → 候选解释更新 → 决定性证据 → 真问题 → 一个最小验证动作。
 
 ### ZG · 打开度
 
@@ -196,6 +221,7 @@ ZG Skills 的重点不是一次给出尽可能多的建议，而是处理此刻�
 - `zg-openness-degree` 不提供医学或心理疾病诊断，也不把“打开”等同于无边界信任、过度暴露隐私或放弃判断。
 - `zg-seed-content-8-methods` 不捏造案例、数据、证言、稀缺性或身份背书，不依靠羞辱、恐吓和不切实际的收益承诺促成交。
 - 医疗、法律、投资等高风险问题需要专业人士和当地规则的进一步核验。
+- `zg-socratic-problem-locator` 不把尚未被反驳的解释当成真相；用户要求停止或换题时会立即结束当前问题链。
 
 ## 开源路线图：一人公司的 AI 员工
 
@@ -214,6 +240,10 @@ ZG Skills 将持续围绕一人公司的真实工作流开源。以下是当前�
 ```text
 zgskill/
 ├── skills/
+│   ├── zg-socratic-problem-locator/
+│   │   ├── SKILL.md
+│   │   ├── agents/openai.yaml
+│   │   └── references/
 │   ├── zg-openness-degree/
 │   │   ├── SKILL.md
 │   │   ├── agents/openai.yaml

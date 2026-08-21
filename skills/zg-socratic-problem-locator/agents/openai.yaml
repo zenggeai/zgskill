@@ -1,0 +1,4 @@
+interface:
+  display_name: "苏格拉底问题定位"
+  short_description: "通过专家假设与关键证据，快速定位真正值得解决的问题"
+  default_prompt: "使用 $zg-socratic-problem-locator，通过关键证据帮我定位真正的问题。"
