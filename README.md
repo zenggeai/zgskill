@@ -2,7 +2,7 @@
 
 > 面向创业者、一人公司和内容创作者的中文 AI Skills。把真实处境、业务材料和当前卡点交给 Agent，获得清晰判断、可直接使用的交付物，以及一个能立刻开始的下一步。
 
-[![Skills](https://img.shields.io/badge/Skills-5-111111.svg)](#skill-全目录)
+[![Skills](https://img.shields.io/badge/Skills-6-111111.svg)](#skill-全目录)
 [![skills.sh](https://skills.sh/b/zenggeai/zgskill)](https://skills.sh/zenggeai/zgskill)
 [![GitHub stars](https://img.shields.io/github/stars/zenggeai/zgskill?style=flat&color=111111)](https://github.com/zenggeai/zgskill/stargazers)
 
@@ -96,6 +96,7 @@ npx -y skills add zenggeai/zgskill -g --skill zg-seed-content-8-methods
 npx -y skills add zenggeai/zgskill -g --skill zg-wewrite
 npx -y skills add zenggeai/zgskill -g --skill zg-counterintuitive-wechat-article
 npx -y skills add zenggeai/zgskill -g --skill zg-socratic-problem-locator
+npx -y skills add zenggeai/zgskill -g --skill zg-customer-case-collector
 ```
 
 ### 先查看可安装的 Skills
@@ -113,6 +114,7 @@ npx -y skills update zg-openness-degree zg-seed-content-8-methods -g
 npx -y skills update zg-wewrite -g
 npx -y skills update zg-counterintuitive-wechat-article -g
 npx -y skills update zg-socratic-problem-locator -g
+npx -y skills update zg-customer-case-collector -g
 ```
 
 更新只会同步 Skill 文件。你在对话中提供的材料和 Agent 中的其他个人数据，不属于本仓库的更新范围。
@@ -132,6 +134,20 @@ Skill 先识别任务类型与信息缺口
 ```
 
 ZG Skills 的重点不是一次给出尽可能多的建议，而是处理此刻最值得推进的一个结点。它们会保留事实空位，不会为了让答案更完整而捏造案例、数据、证言或个人经历。
+
+### ZG · 客户案例采集
+
+`$zg-customer-case-collector`
+
+通过访谈式对话帮助学员批量整理客户成功案例。它按“谁—痛—解—果—证”逐步采访，不让用户填写复杂表格；完成后生成匿名化《客户成功案例卡》，并按行业、客户类型、问题类型、解决方案、结果类型和内容用途建立标签。它不会编造数据、证言或结果，缺少材料时会明确标记“证据待补充”。
+
+适合这样问：
+
+- “采访我，把过去服务过的客户整理成案例卡。”
+- “下一个客户。”
+- “汇总我的客户案例库，并列出待补证据。”
+
+常见产出：自然对话 → 单个客户成功案例卡 → 批量案例标签索引与待补清单。
 
 ## 方法库与参考资料
 
@@ -261,6 +277,9 @@ zgskill/
 │   └── zg-counterintuitive-wechat-article/
 │       ├── SKILL.md
 │       └── agents/openai.yaml
+    ├── zg-customer-case-collector/
+    │   ├── SKILL.md
+    │   └── agents/openai.yaml
 └── README.md
 ```
 

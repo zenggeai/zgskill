@@ -1,0 +1,4 @@
+interface:
+  display_name: "客户案例采集 Skill"
+  short_description: "通过对话采访批量整理客户成功案例卡与可复用案例知识库"
+  default_prompt: "$zg-customer-case-collector 请采访我，帮我整理客户成功案例。一次问一个必要问题，按“谁—痛—解—果—证”提炼，完成后询问是否继续下一个案例。"
