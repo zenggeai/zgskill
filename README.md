@@ -97,6 +97,7 @@ npx -y skills add zenggeai/zgskill -g --skill zg-wewrite
 npx -y skills add zenggeai/zgskill -g --skill zg-counterintuitive-wechat-article
 npx -y skills add zenggeai/zgskill -g --skill zg-socratic-problem-locator
 npx -y skills add zenggeai/zgskill -g --skill zg-customer-case-collector
+npx -y skills add zenggeai/zgskill -g --skill zg-persona-story-collector
 npx -y skills add zenggeai/zgskill -g --skill zg-product-info-collector
 ```
 
@@ -116,6 +117,7 @@ npx -y skills update zg-wewrite -g
 npx -y skills update zg-counterintuitive-wechat-article -g
 npx -y skills update zg-socratic-problem-locator -g
 npx -y skills update zg-customer-case-collector -g
+npx -y skills update zg-persona-story-collector -g
 npx -y skills update zg-product-info-collector -g
 ```
 
@@ -164,6 +166,14 @@ ZG Skills 的重点不是一次给出尽可能多的建议，而是处理此刻�
 - “汇总产品信息，并列出哪些字段还没补齐。”
 
 常见产出：产品资料提炼 → 单个产品卡 → 统一产品索引与待补清单。
+
+### ZG · 人设故事采集
+
+`$zg-persona-story-collector`
+
+用户只需说“帮我整理我的人设故事”，就可以自由倾倒从小到大的多段经历。Skill 会全部保留原始素材，自动切分并轻量整理，再推荐适合深挖的故事；选中后按背景、冲突、应对、过程、结果、影响完成采访，生成可用于个人品牌、内容创作、课程介绍和自我定位的人设故事卡。
+
+常见产出：故事素材池 → 故事索引 → 重点故事深挖 → 人设故事卡 → 人设主题与内容用途汇总。
 
 ## 方法库与参考资料
 

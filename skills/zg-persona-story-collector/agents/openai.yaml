@@ -1,0 +1,4 @@
+interface:
+  display_name: "人设故事采集 Skill"
+  short_description: "通过访谈提炼个人经历与人设故事资产，支持内容与品牌定位"
+  default_prompt: "$zg-persona-story-collector 帮我整理一个人设故事"
