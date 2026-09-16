@@ -1,0 +1,4 @@
+interface:
+  display_name: "产品信息采集 Skill"
+  short_description: "通过资料和访谈提炼产品核心信息并整理成知识库产品卡"
+  default_prompt: "$zg-product-info-collector 帮我整理一个产品"

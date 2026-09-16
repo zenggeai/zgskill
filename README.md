@@ -2,7 +2,7 @@
 
 > 面向创业者、一人公司和内容创作者的中文 AI Skills。把真实处境、业务材料和当前卡点交给 Agent，获得清晰判断、可直接使用的交付物，以及一个能立刻开始的下一步。
 
-[![Skills](https://img.shields.io/badge/Skills-6-111111.svg)](#skill-全目录)
+[![Skills](https://img.shields.io/badge/Skills-7-111111.svg)](#skill-全目录)
 [![skills.sh](https://skills.sh/b/zenggeai/zgskill)](https://skills.sh/zenggeai/zgskill)
 [![GitHub stars](https://img.shields.io/github/stars/zenggeai/zgskill?style=flat&color=111111)](https://github.com/zenggeai/zgskill/stargazers)
 
@@ -97,6 +97,7 @@ npx -y skills add zenggeai/zgskill -g --skill zg-wewrite
 npx -y skills add zenggeai/zgskill -g --skill zg-counterintuitive-wechat-article
 npx -y skills add zenggeai/zgskill -g --skill zg-socratic-problem-locator
 npx -y skills add zenggeai/zgskill -g --skill zg-customer-case-collector
+npx -y skills add zenggeai/zgskill -g --skill zg-product-info-collector
 ```
 
 ### 先查看可安装的 Skills
@@ -115,6 +116,7 @@ npx -y skills update zg-wewrite -g
 npx -y skills update zg-counterintuitive-wechat-article -g
 npx -y skills update zg-socratic-problem-locator -g
 npx -y skills update zg-customer-case-collector -g
+npx -y skills update zg-product-info-collector -g
 ```
 
 更新只会同步 Skill 文件。你在对话中提供的材料和 Agent 中的其他个人数据，不属于本仓库的更新范围。
@@ -148,6 +150,20 @@ ZG Skills 的重点不是一次给出尽可能多的建议，而是处理此刻�
 - “汇总我的客户案例库，并列出待补证据。”
 
 常见产出：自然对话 → 单个客户成功案例卡 → 批量案例标签索引与待补清单。
+
+### ZG · 产品信息采集
+
+`$zg-product-info-collector`
+
+把知识库中的产品资料和用户口述整理成一个统一产品知识库中的产品卡。首次一次性采集 7 个核心字段：产品是什么、适合谁、解决什么场景下的什么问题、带来什么结果、交付权益、跟别人有什么不一样、价格。用户漏填时只集中补问一次，仍未回答的字段标记为“待补充”，不编造信息。
+
+适合这样问：
+
+- “帮我整理一个产品。”
+- “我有五个产品，帮我建立统一产品库。”
+- “汇总产品信息，并列出哪些字段还没补齐。”
+
+常见产出：产品资料提炼 → 单个产品卡 → 统一产品索引与待补清单。
 
 ## 方法库与参考资料
 
@@ -278,6 +294,9 @@ zgskill/
 │       ├── SKILL.md
 │       └── agents/openai.yaml
     ├── zg-customer-case-collector/
+    │   ├── SKILL.md
+    │   └── agents/openai.yaml
+    ├── zg-product-info-collector/
     │   ├── SKILL.md
     │   └── agents/openai.yaml
 └── README.md
