@@ -2,7 +2,7 @@
 
 > 面向创业者、一人公司和内容创作者的中文 AI Skills。把真实处境、业务材料和当前卡点交给 Agent，获得清晰判断、可直接使用的交付物，以及一个能立刻开始的下一步。
 
-[![Skills](https://img.shields.io/badge/Skills-10-111111.svg)](#skill-全目录)
+[![Skills](https://img.shields.io/badge/Skills-12-111111.svg)](#skill-全目录)
 [![skills.sh](https://skills.sh/b/zenggeai/zgskill)](https://skills.sh/zenggeai/zgskill)
 [![GitHub stars](https://img.shields.io/github/stars/zenggeai/zgskill?style=flat&color=111111)](https://github.com/zenggeai/zgskill/stargazers)
 
@@ -35,6 +35,7 @@ Agent 完成诊断、生成或改写
 | 一听到反对意见就急着解释，事后才发现自己没有听进去 | 具体场景还原、主要卡点和一个低风险打开练习 |
 | 想主动联系别人、表达需求或尝试新事物，却总是在行动前缩回去 | 对保护机制与现实代价的区分，以及可撤回的最小行动 |
 | 不知道朋友圈该发什么，或者写出来总像在硬卖 | 适合当前材料的主术式和一条可直接发布的中文文案 |
+| 手里有产品、案例或人设素材，却不知道朋友圈九宫格该选哪一格 | 一个核心种草目标、事实边界检查和 200 字内可发布成稿 |
 | 有用户反馈、真实案例或一个反常识观点，却不知道怎么讲清楚 | 单一内容目标、证据链检查和结构化成稿 |
 | 已经写好一条内容，但担心夸大、空泛、压迫感强 | 当前术式判断、最影响效果的 1–3 个问题和局部修改方向 |
 | 遇到结果异常，却只能归因为“我水平不行”或“内容不好” | 基于关键证据淘汰错误解释，定位真正值得解决的问题 |
@@ -56,6 +57,11 @@ $zg-seed-content-8-methods
 ```
 
 ```text
+$zg-ai-nine-grid-moments
+根据下面的客户案例写一条 200 字以内的朋友圈。请自行选择九宫格里最合适的一格，只讲透一个点，不要编造数据。
+```
+
+```text
 $zg-socratic-problem-locator
 我最近连续发布 20 条短视频，播放量都没有超过 1 万。
 先别急着给方案，请根据已有数据帮我定位真正的问题。
@@ -72,6 +78,7 @@ $zg-socratic-problem-locator
 | 从零生成朋友圈、私域或个人品牌内容 | `$zg-seed-content-8-methods` | 术式选择、可发布成稿、待核实项 |
 | 改写或诊断已有文案 | `$zg-seed-content-8-methods` | 单一目标、问题优先级、局部修改示例 |
 | 设计一组连续内容 | `$zg-seed-content-8-methods` | 内容布局、术式交替和 7 条最小排期 |
+| 用九宫格把素材写成朋友圈 | `$zg-ai-nine-grid-moments` | 主格选择、事实核验、200 字内可发布成稿 |
 | 一句话生成公众号文章并保存到草稿箱 | `$zg-wewrite` | 选题、框架、正文、SEO、配图、排版与草稿箱 |
 | 写反常识公众号长文 | `$zg-counterintuitive-wechat-article` | 标题、现象、观点、方法和金句收尾 |
 | 梳理个人定位与长期内容框架 | `$zg-daofa-content-framework` | 核心服务问题与道法术器二级内容框架 |
@@ -104,6 +111,7 @@ npx -y skills add zenggeai/zgskill -g --skill zg-product-info-collector
 npx -y skills add zenggeai/zgskill -g --skill zg-daofa-content-framework
 npx -y skills add zenggeai/zgskill -g --skill zg-xuan-ti-fan-yi-qi
 npx -y skills add zenggeai/zgskill -g --skill zg-hotspot-theory
+npx -y skills add zenggeai/zgskill -g --skill zg-ai-nine-grid-moments
 ```
 
 ### 先查看可安装的 Skills
@@ -127,6 +135,7 @@ npx -y skills update zg-product-info-collector -g
 npx -y skills update zg-daofa-content-framework -g
 npx -y skills update zg-xuan-ti-fan-yi-qi -g
 npx -y skills update zg-hotspot-theory -g
+npx -y skills update zg-ai-nine-grid-moments -g
 ```
 
 更新只会同步 Skill 文件。你在对话中提供的材料和 Agent 中的其他个人数据，不属于本仓库的更新范围。
@@ -191,6 +200,8 @@ ZG Skills 的重点不是一次给出尽可能多的建议，而是处理此刻�
 - 想按学习、沟通、管理、亲子或情绪场景选择练习，阅读 [`practice-library.md`](skills/zg-openness-degree/references/practice-library.md)。
 - 想了解种草力 8 术的选择条件、结构模板和诊断要点，阅读 [`methods.md`](skills/zg-seed-content-8-methods/references/methods.md)。
 - 想设计连续朋友圈的内容结构与最小排期，阅读 [`content-layout.md`](skills/zg-seed-content-8-methods/references/content-layout.md)。
+- 想了解朋友圈九宫格的九个主格与组合边界，阅读 [`nine-grid-marketing.md`](skills/zg-ai-nine-grid-moments/references/nine-grid-marketing.md)。
+- 想了解案例、数字、来源优先级和自然表达规则，阅读 [`writing-and-evidence.md`](skills/zg-ai-nine-grid-moments/references/writing-and-evidence.md)。
 - 想把“苏格拉底问题定位”方法复制给其他 AI，阅读 [`standalone-prompt.md`](skills/zg-socratic-problem-locator/references/standalone-prompt.md)。
 
 ### ZG · 选题翻译器
@@ -251,6 +262,20 @@ ZG Skills 的重点不是一次给出尽可能多的建议，而是处理此刻�
 
 常见产出：术式选择理由 → 可发布成稿或诊断建议 → 待核实的事实项。
 
+### AI九宫格朋友圈助手
+
+`$zg-ai-nine-grid-moments`
+
+根据经历、观点、产品资料、客户案例或人设故事，从“种草自己、种草需求、种草产品”三大方向的九个主格中，只选择最适合当前素材的一格，写成真实、自然、有温度的朋友圈。默认不超过 200 字，不展示策略分析，不编造案例、数字、证言、稀缺性或收益承诺。
+
+适合这样问：
+
+- “根据这段经历写一条朋友圈，帮我自动选择最合适的九宫格策略。”
+- “根据这份客户案例写 5 条朋友圈，每条使用不同的核心判断。”
+- “这条朋友圈为什么像广告？先诊断，不要直接重写。”
+
+常见产出：目标读者与第一目标 → 九宫格主格 → 事实边界检查 → 200 字内可发布成稿。
+
 ### WeWrite · 公众号文章全流程
 
 `$zg-wewrite`
@@ -298,6 +323,7 @@ ZG Skills 的重点不是一次给出尽可能多的建议，而是处理此刻�
 - 先给真实处境、真实材料和真实目标；信息不足时，Skill 会保留事实空位，而不是自行补齐。
 - `zg-openness-degree` 不提供医学或心理疾病诊断，也不把“打开”等同于无边界信任、过度暴露隐私或放弃判断。
 - `zg-seed-content-8-methods` 不捏造案例、数据、证言、稀缺性或身份背书，不依靠羞辱、恐吓和不切实际的收益承诺促成交。
+- `zg-ai-nine-grid-moments` 默认一条只选一个九宫格主格；用户未明确要求产品种草时，不出现产品名称、价格、虚假限时或强成交口号。
 - 医疗、法律、投资等高风险问题需要专业人士和当地规则的进一步核验。
 - `zg-socratic-problem-locator` 不把尚未被反驳的解释当成真相；用户要求停止或换题时会立即结束当前问题链。
 
@@ -318,38 +344,22 @@ ZG Skills 将持续围绕一人公司的真实工作流开源。以下是当前�
 ```text
 zgskill/
 ├── skills/
-│   ├── zg-socratic-problem-locator/
-│   │   ├── SKILL.md
-│   │   ├── agents/openai.yaml
-│   │   └── references/
-│   ├── zg-openness-degree/
-│   │   ├── SKILL.md
-│   │   ├── agents/openai.yaml
-│   │   └── references/
-│   ├── zg-seed-content-8-methods/
-│   │   ├── SKILL.md
-│   │   ├── agents/openai.yaml
-│   │   └── references/
-│   ├── zg-wewrite/
+│   ├── zg-ai-nine-grid-moments/
 │   │   ├── SKILL.md
 │   │   ├── agents/openai.yaml
 │   │   ├── references/
-│   │   ├── scripts/
-│   │   └── toolkit/
-│   └── zg-counterintuitive-wechat-article/
-│       ├── SKILL.md
-│       └── agents/openai.yaml
-    ├── zg-customer-case-collector/
-    │   ├── SKILL.md
-    │   └── agents/openai.yaml
-    ├── zg-product-info-collector/
-    │   ├── SKILL.md
-    │   └── agents/openai.yaml
-    ├── zg-daofa-content-framework/
-    │   ├── SKILL.md
-    │   ├── agents/openai.yaml
-    │   ├── references/
-    │   └── assets/
+│   │   └── scripts/
+│   ├── zg-counterintuitive-wechat-article/
+│   ├── zg-customer-case-collector/
+│   ├── zg-daofa-content-framework/
+│   ├── zg-hotspot-theory/
+│   ├── zg-openness-degree/
+│   ├── zg-persona-story-collector/
+│   ├── zg-product-info-collector/
+│   ├── zg-seed-content-8-methods/
+│   ├── zg-socratic-problem-locator/
+│   ├── zg-wewrite/
+│   └── zg-xuan-ti-fan-yi-qi/
 └── README.md
 ```
 

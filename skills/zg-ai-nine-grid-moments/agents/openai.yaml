@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI九宫格朋友圈助手"
+  short_description: "从九宫格中选择一个策略，把真实素材写成自然有温度的朋友圈"
+  default_prompt: "使用 $zg-ai-nine-grid-moments，根据我提供的素材写一条200字以内、可以直接发布的朋友圈。"
