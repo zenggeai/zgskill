@@ -2,7 +2,7 @@
 
 > 面向创业者、一人公司和内容创作者的中文 AI Skills。把真实处境、业务材料和当前卡点交给 Agent，获得清晰判断、可直接使用的交付物，以及一个能立刻开始的下一步。
 
-[![Skills](https://img.shields.io/badge/Skills-12-111111.svg)](#skill-全目录)
+[![Skills](https://img.shields.io/badge/Skills-13-111111.svg)](#skill-全目录)
 [![skills.sh](https://skills.sh/b/zenggeai/zgskill)](https://skills.sh/zenggeai/zgskill)
 [![GitHub stars](https://img.shields.io/github/stars/zenggeai/zgskill?style=flat&color=111111)](https://github.com/zenggeai/zgskill/stargazers)
 
@@ -39,6 +39,7 @@ Agent 完成诊断、生成或改写
 | 有用户反馈、真实案例或一个反常识观点，却不知道怎么讲清楚 | 单一内容目标、证据链检查和结构化成稿 |
 | 已经写好一条内容，但担心夸大、空泛、压迫感强 | 当前术式判断、最影响效果的 1–3 个问题和局部修改方向 |
 | 遇到结果异常，却只能归因为“我水平不行”或“内容不好” | 基于关键证据淘汰错误解释，定位真正值得解决的问题 |
+| 老板同时面对多个产品、方向或同行动作，不知道资源该押在哪里 | 真正决策问题、最强正反证据、当前倾向、信心等级和改判条件 |
 
 ## 快速开始
 
@@ -67,7 +68,13 @@ $zg-socratic-problem-locator
 先别急着给方案，请根据已有数据帮我定位真正的问题。
 ```
 
-不知道选哪个 Skill 时，先判断你要处理的是“问题尚未定位”“人的打开与行动”，还是“内容的生成与表达”。
+```text
+$zg-ai-strategy-expert
+结合我的业务，帮我判断未来 6 个月的增长应该押在哪条主线上。
+先给工作性判断，一次只问一个真正影响结论的问题。
+```
+
+不知道选哪个 Skill 时，先判断你要处理的是“战略取舍”“问题尚未定位”“人的打开与行动”，还是“内容的生成与表达”。
 
 ## 能力一览
 
@@ -81,6 +88,7 @@ $zg-socratic-problem-locator
 | 用九宫格把素材写成朋友圈 | `$zg-ai-nine-grid-moments` | 主格选择、事实核验、200 字内可发布成稿 |
 | 一句话生成公众号文章并保存到草稿箱 | `$zg-wewrite` | 选题、框架、正文、SEO、配图、排版与草稿箱 |
 | 写反常识公众号长文 | `$zg-counterintuitive-wechat-article` | 标题、现象、观点、方法和金句收尾 |
+| 判断目标、产品、方向、合作或同行证据 | `$zg-ai-strategy-expert` | 真正决策、正反论证、倾向、信心和改判条件 |
 | 梳理个人定位与长期内容框架 | `$zg-daofa-content-framework` | 核心服务问题与道法术器二级内容框架 |
 | 把真实素材翻译成可生产的短视频选题 | `$zg-xuan-ti-fan-yi-qi` | 受众、场景、矛盾、证据、判断与商业去向 |
 | 从模糊困惑、异常结果或草率归因中定位真问题 | `$zg-socratic-problem-locator` | 当前断点、被推翻解释、关键未知和最小验证动作 |
@@ -112,6 +120,7 @@ npx -y skills add zenggeai/zgskill -g --skill zg-daofa-content-framework
 npx -y skills add zenggeai/zgskill -g --skill zg-xuan-ti-fan-yi-qi
 npx -y skills add zenggeai/zgskill -g --skill zg-hotspot-theory
 npx -y skills add zenggeai/zgskill -g --skill zg-ai-nine-grid-moments
+npx -y skills add zenggeai/zgskill -g --skill zg-ai-strategy-expert
 ```
 
 ### 先查看可安装的 Skills
@@ -136,6 +145,7 @@ npx -y skills update zg-daofa-content-framework -g
 npx -y skills update zg-xuan-ti-fan-yi-qi -g
 npx -y skills update zg-hotspot-theory -g
 npx -y skills update zg-ai-nine-grid-moments -g
+npx -y skills update zg-ai-strategy-expert -g
 ```
 
 更新只会同步 Skill 文件。你在对话中提供的材料和 Agent 中的其他个人数据，不属于本仓库的更新范围。
@@ -203,6 +213,9 @@ ZG Skills 的重点不是一次给出尽可能多的建议，而是处理此刻�
 - 想了解朋友圈九宫格的九个主格与组合边界，阅读 [`nine-grid-marketing.md`](skills/zg-ai-nine-grid-moments/references/nine-grid-marketing.md)。
 - 想了解案例、数字、来源优先级和自然表达规则，阅读 [`writing-and-evidence.md`](skills/zg-ai-nine-grid-moments/references/writing-and-evidence.md)。
 - 想把“苏格拉底问题定位”方法复制给其他 AI，阅读 [`standalone-prompt.md`](skills/zg-socratic-problem-locator/references/standalone-prompt.md)。
+- 想了解战略问题的共同判断骨架，阅读 [`strategy-core.md`](skills/zg-ai-strategy-expert/references/strategy-core.md)。
+- 想了解目标增长、战略诊断、机会判断、同行研究和复盘的模式，阅读 [`modes.md`](skills/zg-ai-strategy-expert/references/modes.md)。
+- 想了解战略研究的证据等级、联网条件和同行分类，阅读 [`evidence-and-research.md`](skills/zg-ai-strategy-expert/references/evidence-and-research.md)。
 
 ### ZG · 选题翻译器
 
@@ -219,6 +232,20 @@ ZG Skills 的重点不是一次给出尽可能多的建议，而是处理此刻�
 常见产出：素材判断 → 受众与矛盾 → 核心判断 → 证据缺口 → 推荐选题 → 生产状态。
 
 ## Skill 全目录
+
+### AI 战略专家 SKILL
+
+`$zg-ai-strategy-expert`
+
+作为老板的长期 AI 战略合伙人，处理目标与增长、现有战略诊断、产品或方向判断、方案比较、同行研究和历史决策复盘。它不会一上来输出冗长计划，而是先识别真正需要决定的问题，呈现最强支持面和反对面，再给出当前倾向、信心等级和什么证据会让它改判；最终决定权始终留给用户。
+
+适合这样问：
+
+- “结合我的业务，未来 6 个月增长应该押在哪条主线上？”
+- “这个产品要不要做？先帮我找出真正的战略取舍。”
+- “看看这些同行，哪些是商业对标，哪些只能借鉴一个机制？”
+
+常见产出：真正决策问题 → 已确认事实与关键未知 → 最强正反论证 → 当前倾向与信心 → 改判条件。纯排班、周任务、材料写作和详细项目管理会被明确路由到其他能力。
 
 ### ZG · 苏格拉底问题定位
 
@@ -326,6 +353,7 @@ ZG Skills 的重点不是一次给出尽可能多的建议，而是处理此刻�
 - `zg-ai-nine-grid-moments` 默认一条只选一个九宫格主格；用户未明确要求产品种草时，不出现产品名称、价格、虚假限时或强成交口号。
 - 医疗、法律、投资等高风险问题需要专业人士和当地规则的进一步核验。
 - `zg-socratic-problem-locator` 不把尚未被反驳的解释当成真相；用户要求停止或换题时会立即结束当前问题链。
+- `zg-ai-strategy-expert` 给出倾向但不替用户决定；动态经营数据和市场事实需要当次核验，未经确认不会写入长期决策记录。
 
 ## 开源路线图：一人公司的 AI 员工
 
@@ -349,6 +377,10 @@ zgskill/
 │   │   ├── agents/openai.yaml
 │   │   ├── references/
 │   │   └── scripts/
+│   ├── zg-ai-strategy-expert/
+│   │   ├── SKILL.md
+│   │   ├── agents/openai.yaml
+│   │   └── references/
 │   ├── zg-counterintuitive-wechat-article/
 │   ├── zg-customer-case-collector/
 │   ├── zg-daofa-content-framework/

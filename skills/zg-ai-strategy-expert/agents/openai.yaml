@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI 战略专家 SKILL"
+  short_description: "陪老板长期理解业务、研究证据并形成可复盘的战略倾向"
+  default_prompt: "使用 $zg-ai-strategy-expert，结合我的业务背景和当前证据，和我逐步讨论这个战略问题，呈现最强正反观点并给出你的倾向。"
