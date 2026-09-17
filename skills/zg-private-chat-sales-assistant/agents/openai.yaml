@@ -1,0 +1,4 @@
+interface:
+  display_name: "ZG · AI私聊成交专家"
+  short_description: "先读产品与客户知识，再诊断私聊疑虑并生成可信、自然、可直接发送的回复"
+  default_prompt: "Use $zg-private-chat-sales-assistant to analyze this customer's concern using my product knowledge and write the next Chinese message I can send."
