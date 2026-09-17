@@ -1,0 +1,7 @@
+interface:
+  display_name: "zg-lead-product-designer"
+  short_description: "把模糊课程和赠品收敛成可验收、可复制并连接后端产品的入口方案"
+  default_prompt: "使用 $zg-lead-product-designer，结合我的后端产品和目标客户，设计一个结果具体、可验收、能规模交付的引流品。"
+
+policy:
+  allow_implicit_invocation: true

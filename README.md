@@ -2,7 +2,7 @@
 
 > 面向创业者、一人公司和内容创作者的中文 AI Skills。把真实处境、业务材料和当前卡点交给 Agent，获得清晰判断、可直接使用的交付物，以及一个能立刻开始的下一步。
 
-[![Skills](https://img.shields.io/badge/Skills-13-111111.svg)](#skill-全目录)
+[![Skills](https://img.shields.io/badge/Skills-14-111111.svg)](#skill-全目录)
 [![skills.sh](https://skills.sh/b/zenggeai/zgskill)](https://skills.sh/zenggeai/zgskill)
 [![GitHub stars](https://img.shields.io/github/stars/zenggeai/zgskill?style=flat&color=111111)](https://github.com/zenggeai/zgskill/stargazers)
 
@@ -37,6 +37,7 @@ Agent 完成诊断、生成或改写
 | 有用户反馈、真实案例或一个反常识观点，却不知道怎么讲清楚 | 单一内容目标、证据链检查和结构化成稿 |
 | 已经写好一条内容，但担心夸大、空泛、压迫感强 | 当前术式判断、最影响效果的 1–3 个问题和局部修改方向 |
 | 客户在私聊里说“太贵”“考虑一下”或“怕没效果”，不知道怎么继续 | 基于产品与客户知识的疑虑诊断、应对原理和可直接发送的话术 |
+| 想做低价课、体验营或诊断产品，却分不清课程内容和客户结果 | 一个可验收的主结果、标准化交付闭环、后端承接和付费验证计划 |
 | 遇到结果异常，却只能归因为“我水平不行”或“内容不好” | 基于关键证据淘汰错误解释，定位真正值得解决的问题 |
 | 老板同时面对多个产品、方向或同行动作，不知道资源该押在哪里 | 真正决策问题、最强正反证据、当前倾向、信心等级和改判条件 |
 
@@ -73,6 +74,12 @@ $zg-private-chat-sales-assistant
 输出应对方法、背后原理和一版可以直接发送的微信话术。
 ```
 
+```text
+$zg-lead-product-designer
+我的后端产品是一门 3980 元线下课，想做一个 99 元三天体验课。
+请帮我把课程主题收敛成一个客户看得见、能验收、可以规模交付的结果。
+```
+
 不知道选哪个 Skill 时，先判断你要处理的是“战略取舍”“问题尚未定位”，还是“内容的生成与表达”。
 
 ## 能力一览
@@ -84,6 +91,7 @@ $zg-private-chat-sales-assistant
 | 设计一组连续内容 | `$zg-seed-content-8-methods` | 内容布局、术式交替和 7 条最小排期 |
 | 用九宫格把素材写成朋友圈 | `$zg-ai-nine-grid-moments` | 主格选择、事实核验、200 字内可发布成稿 |
 | 诊断客户私聊疑虑并生成下一条回复 | `$zg-private-chat-sales-assistant` | 疑虑判断、应对方法、原理和可发送话术 |
+| 设计或诊断低价课、体验营、诊断服务等引流品 | `$zg-lead-product-designer` | 主结果、验收标准、交付闭环、后端承接与验证计划 |
 | 一句话生成公众号文章并保存到草稿箱 | `$zg-wewrite` | 选题、框架、正文、SEO、配图、排版与草稿箱 |
 | 写反常识公众号长文 | `$zg-counterintuitive-wechat-article` | 标题、现象、观点、方法和金句收尾 |
 | 判断目标、产品、方向、合作或同行证据 | `$zg-ai-strategy-expert` | 真正决策、正反论证、倾向、信心和改判条件 |
@@ -119,6 +127,7 @@ npx -y skills add zenggeai/zgskill -g --skill zg-hotspot-theory
 npx -y skills add zenggeai/zgskill -g --skill zg-ai-nine-grid-moments
 npx -y skills add zenggeai/zgskill -g --skill zg-ai-strategy-expert
 npx -y skills add zenggeai/zgskill -g --skill zg-private-chat-sales-assistant
+npx -y skills add zenggeai/zgskill -g --skill zg-lead-product-designer
 ```
 
 ### 先查看可安装的 Skills
@@ -145,6 +154,7 @@ npx -y skills update zg-hotspot-theory -g
 npx -y skills update zg-ai-nine-grid-moments -g
 npx -y skills update zg-ai-strategy-expert -g
 npx -y skills update zg-private-chat-sales-assistant -g
+npx -y skills update zg-lead-product-designer -g
 ```
 
 更新只会同步 Skill 文件。你在对话中提供的材料和 Agent 中的其他个人数据，不属于本仓库的更新范围。
@@ -215,6 +225,8 @@ ZG Skills 的重点不是一次给出尽可能多的建议，而是处理此刻�
 - 想了解战略研究的证据等级、联网条件和同行分类，阅读 [`evidence-and-research.md`](skills/zg-ai-strategy-expert/references/evidence-and-research.md)。
 - 想完成私聊助手的首次知识接入，阅读 [`knowledge-intake.md`](skills/zg-private-chat-sales-assistant/references/knowledge-intake.md)。
 - 想判断成交阶段、疑虑类别和应对方法，阅读 [`method-library.md`](skills/zg-private-chat-sales-assistant/references/method-library.md)。
+- 想把课程主题、渠道和工具收敛成可验收结果，阅读 [`result-design.md`](skills/zg-lead-product-designer/references/result-design.md)。
+- 想比较多个引流品候选并设计小样本测试，阅读 [`scoring-and-validation.md`](skills/zg-lead-product-designer/references/scoring-and-validation.md)。
 
 ### ZG · 选题翻译器
 
@@ -259,6 +271,20 @@ ZG Skills 的重点不是一次给出尽可能多的建议，而是处理此刻�
 - “客户说要和合伙人商量，给我应对方法、原理和可直接发送的话术。”
 
 常见产出：成交阶段与疑虑假设 → 应对方法 → 背后原理 → 可发送话术 → 下一步分支。知识不足时会先补产品和客户信息，不编造案例、效果、稀缺性或承诺，也不会用羞辱、恐吓和虚假紧迫感逼单。
+
+### ZG · 引流品设计师
+
+`$zg-lead-product-designer`
+
+为免费、低价或体验型入口产品寻找一个客户看得懂、能完成、可验收且可以规模交付的小结果。它会先识别后端产品和购买前问题，再区分课程主题、传播渠道、工具手段与客户结果；通过一票否决和八项评分收敛一个主方案，用统一成品倒推交付，并设计自然承接与真实付费验证。
+
+适合这样问：
+
+- “我想做一个 99 元三天体验课，应该让客户完成什么结果？”
+- “这个引流品看起来很丰富，为什么客户还是不想买？”
+- “我有三个前端产品想法，帮我淘汰不适合规模交付的方案。”
+
+常见产出：产品角色 → 目标客户与触发场景 → 一句话结果承诺 → 最终成品与验收 → 标准化交付 → 后端承接 → 小样本验证计划。它不会把资料数量、低价或课程目录当成价值，也不会承诺保证赚钱、涨粉或成交。
 
 ### ZG · 苏格拉底问题定位
 
@@ -353,6 +379,7 @@ ZG Skills 的重点不是一次给出尽可能多的建议，而是处理此刻�
 - `zg-socratic-problem-locator` 不把尚未被反驳的解释当成真相；用户要求停止或换题时会立即结束当前问题链。
 - `zg-ai-strategy-expert` 给出倾向但不替用户决定；动态经营数据和市场事实需要当次核验，未经确认不会写入长期决策记录。
 - `zg-private-chat-sales-assistant` 必须先获得产品与目标客户信息；客户明确拒绝或要求停止联系时，会停止推进并尊重边界。
+- `zg-lead-product-designer` 不把课程目录、工具功能或低价本身当成客户结果；不设计故意残缺的升单诱饵，也不把收入、成交和涨粉写成无条件保证。
 
 ## 开源路线图：一人公司的 AI 员工
 
@@ -384,6 +411,7 @@ zgskill/
 │   ├── zg-customer-case-collector/
 │   ├── zg-daofa-content-framework/
 │   ├── zg-hotspot-theory/
+│   ├── zg-lead-product-designer/
 │   ├── zg-persona-story-collector/
 │   ├── zg-private-chat-sales-assistant/
 │   ├── zg-product-info-collector/
