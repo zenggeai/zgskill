@@ -2,7 +2,7 @@
 
 > 面向创业者、一人公司和内容创作者的中文 AI Skills。把真实处境、业务材料和当前卡点交给 Agent，获得清晰判断、可直接使用的交付物，以及一个能立刻开始的下一步。
 
-[![Skills](https://img.shields.io/badge/Skills-14-111111.svg)](#skill-全目录)
+[![Skills](https://img.shields.io/badge/Skills-13-111111.svg)](#skill-全目录)
 [![skills.sh](https://skills.sh/b/zenggeai/zgskill)](https://skills.sh/zenggeai/zgskill)
 [![GitHub stars](https://img.shields.io/github/stars/zenggeai/zgskill?style=flat&color=111111)](https://github.com/zenggeai/zgskill/stargazers)
 
@@ -28,12 +28,10 @@ Agent 完成诊断、生成或改写
 
 ## ZG Skills 解决什么问题
 
-你不需要先学会“打开度”或“种草力 8 术”的全部方法。只要把眼前发生的事、手里已有的材料和你真正想解决的问题说清楚，对应 Skill 会帮你选择当前最值得处理的一个点。
+你不需要先学会每个 Skill 背后的全部方法。只要把眼前发生的事、手里已有的材料和你真正想解决的问题说清楚，对应 Skill 会帮你选择当前最值得处理的一个点。
 
 | 真实处境 | 你会得到 |
 | --- | --- |
-| 一听到反对意见就急着解释，事后才发现自己没有听进去 | 具体场景还原、主要卡点和一个低风险打开练习 |
-| 想主动联系别人、表达需求或尝试新事物，却总是在行动前缩回去 | 对保护机制与现实代价的区分，以及可撤回的最小行动 |
 | 不知道朋友圈该发什么，或者写出来总像在硬卖 | 适合当前材料的主术式和一条可直接发布的中文文案 |
 | 手里有产品、案例或人设素材，却不知道朋友圈九宫格该选哪一格 | 一个核心种草目标、事实边界检查和 200 字内可发布成稿 |
 | 有用户反馈、真实案例或一个反常识观点，却不知道怎么讲清楚 | 单一内容目标、证据链检查和结构化成稿 |
@@ -45,12 +43,6 @@ Agent 完成诊断、生成或改写
 ## 快速开始
 
 安装完成后，直接在 Agent 中说出问题。支持显式 Skill 调用的 Agent，可以这样开始：
-
-```text
-$zg-openness-degree
-我每次开会被反对就急着证明自己，会后又觉得自己根本没听进去。
-帮我判断卡在哪里，并给我一个今天就能做的练习。
-```
 
 ```text
 $zg-seed-content-8-methods
@@ -81,14 +73,12 @@ $zg-private-chat-sales-assistant
 输出应对方法、背后原理和一版可以直接发送的微信话术。
 ```
 
-不知道选哪个 Skill 时，先判断你要处理的是“战略取舍”“问题尚未定位”“人的打开与行动”，还是“内容的生成与表达”。
+不知道选哪个 Skill 时，先判断你要处理的是“战略取舍”“问题尚未定位”，还是“内容的生成与表达”。
 
 ## 能力一览
 
 | 工作目标 | 主要入口 | 常见产出 |
 | --- | --- | --- |
-| 判断学习、沟通、关系或管理中的封闭卡点 | `$zg-openness-degree` | 场景还原、主卡点、保护与代价 |
-| 设计安全、具体、可复盘的打开练习 | `$zg-openness-degree` | 24 小时最小行动、停止条件、复盘问题 |
 | 从零生成朋友圈、私域或个人品牌内容 | `$zg-seed-content-8-methods` | 术式选择、可发布成稿、待核实项 |
 | 改写或诊断已有文案 | `$zg-seed-content-8-methods` | 单一目标、问题优先级、局部修改示例 |
 | 设计一组连续内容 | `$zg-seed-content-8-methods` | 内容布局、术式交替和 7 条最小排期 |
@@ -116,7 +106,6 @@ npx -y skills add zenggeai/zgskill -g --all
 ### 只安装一个 Skill
 
 ```bash
-npx -y skills add zenggeai/zgskill -g --skill zg-openness-degree
 npx -y skills add zenggeai/zgskill -g --skill zg-seed-content-8-methods
 npx -y skills add zenggeai/zgskill -g --skill zg-wewrite
 npx -y skills add zenggeai/zgskill -g --skill zg-counterintuitive-wechat-article
@@ -143,7 +132,7 @@ npx -y skills add zenggeai/zgskill --list
 已经安装 ZG Skills 时，可执行：
 
 ```bash
-npx -y skills update zg-openness-degree zg-seed-content-8-methods -g
+npx -y skills update zg-seed-content-8-methods -g
 npx -y skills update zg-wewrite -g
 npx -y skills update zg-counterintuitive-wechat-article -g
 npx -y skills update zg-socratic-problem-locator -g
@@ -216,8 +205,6 @@ ZG Skills 的重点不是一次给出尽可能多的建议，而是处理此刻�
 
 仓库中每个 Skill 都将核心工作流程放在 `SKILL.md` 中，将只在特定场景才需要的详细方法放在 `references/` 中。Agent 会在需要时按需读取，避免每次调用都加载全部内容。
 
-- 想了解打开度的五个通道、判断顺序和表达边界，阅读 [`framework.md`](skills/zg-openness-degree/references/framework.md)。
-- 想按学习、沟通、管理、亲子或情绪场景选择练习，阅读 [`practice-library.md`](skills/zg-openness-degree/references/practice-library.md)。
 - 想了解种草力 8 术的选择条件、结构模板和诊断要点，阅读 [`methods.md`](skills/zg-seed-content-8-methods/references/methods.md)。
 - 想设计连续朋友圈的内容结构与最小排期，阅读 [`content-layout.md`](skills/zg-seed-content-8-methods/references/content-layout.md)。
 - 想了解朋友圈九宫格的九个主格与组合边界，阅读 [`nine-grid-marketing.md`](skills/zg-ai-nine-grid-moments/references/nine-grid-marketing.md)。
@@ -286,20 +273,6 @@ ZG Skills 的重点不是一次给出尽可能多的建议，而是处理此刻�
 - “这是平台数据截图，请结合决定性证据重新判断问题在哪里。”
 
 常见产出：自然短对话 → 候选解释更新 → 决定性证据 → 真问题 → 一个最小验证动作。
-
-### ZG · 打开度
-
-`$zg-openness-degree`
-
-用“打开度”框架分析个人成长、学习、创造力、沟通、关系、管理、亲子与情绪中的封闭信号。它不会给人贴上“你就是封闭”的标签，而是帮你区分必要边界与惯性防御，找到一个低风险、可撤回、可复盘的打开动作。
-
-适合这样问：
-
-- “我总听不进不同意见，到底在防御什么？”
-- “我知道该主动，但就是不敢联系别人，怎么办？”
-- “孩子不愿意和我沟通，我可以先调整什么？”
-
-常见产出：场景还原 → 主要卡点 → 保护与代价 → 最小行动 → 复盘问题。
 
 ### ZG · 种草力 8 术 Lite
 
@@ -374,7 +347,6 @@ ZG Skills 的重点不是一次给出尽可能多的建议，而是处理此刻�
 ## 使用原则与边界
 
 - 先给真实处境、真实材料和真实目标；信息不足时，Skill 会保留事实空位，而不是自行补齐。
-- `zg-openness-degree` 不提供医学或心理疾病诊断，也不把“打开”等同于无边界信任、过度暴露隐私或放弃判断。
 - `zg-seed-content-8-methods` 不捏造案例、数据、证言、稀缺性或身份背书，不依靠羞辱、恐吓和不切实际的收益承诺促成交。
 - `zg-ai-nine-grid-moments` 默认一条只选一个九宫格主格；用户未明确要求产品种草时，不出现产品名称、价格、虚假限时或强成交口号。
 - 医疗、法律、投资等高风险问题需要专业人士和当地规则的进一步核验。
@@ -412,7 +384,6 @@ zgskill/
 │   ├── zg-customer-case-collector/
 │   ├── zg-daofa-content-framework/
 │   ├── zg-hotspot-theory/
-│   ├── zg-openness-degree/
 │   ├── zg-persona-story-collector/
 │   ├── zg-private-chat-sales-assistant/
 │   ├── zg-product-info-collector/
