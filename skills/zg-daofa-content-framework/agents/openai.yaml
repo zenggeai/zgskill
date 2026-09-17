@@ -1,5 +1,5 @@
 interface:
-  display_name: "道法术器选题内容框架教练"
+  display_name: "道法术器选题内容框架"
   short_description: "建立个人道法术器框架，并把一个选题升级成四个维度的内容方向"
   default_prompt: "请使用 $zg-daofa-content-framework。如果我给了一个选题，就把它从器扩展到术、法、道四个维度；如果我还没有框架，再通过逐步访谈帮我建立。不要编造事实、经历或立场。"
 policy:
