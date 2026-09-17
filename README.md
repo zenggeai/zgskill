@@ -2,7 +2,7 @@
 
 > 面向创业者、一人公司和内容创作者的中文 AI Skills。把真实处境、业务材料和当前卡点交给 Agent，获得清晰判断、可直接使用的交付物，以及一个能立刻开始的下一步。
 
-[![Skills](https://img.shields.io/badge/Skills-9-111111.svg)](#skill-全目录)
+[![Skills](https://img.shields.io/badge/Skills-10-111111.svg)](#skill-全目录)
 [![skills.sh](https://skills.sh/b/zenggeai/zgskill)](https://skills.sh/zenggeai/zgskill)
 [![GitHub stars](https://img.shields.io/github/stars/zenggeai/zgskill?style=flat&color=111111)](https://github.com/zenggeai/zgskill/stargazers)
 
@@ -103,6 +103,7 @@ npx -y skills add zenggeai/zgskill -g --skill zg-persona-story-collector
 npx -y skills add zenggeai/zgskill -g --skill zg-product-info-collector
 npx -y skills add zenggeai/zgskill -g --skill zg-daofa-content-framework
 npx -y skills add zenggeai/zgskill -g --skill zg-xuan-ti-fan-yi-qi
+npx -y skills add zenggeai/zgskill -g --skill zg-hotspot-theory
 ```
 
 ### 先查看可安装的 Skills
@@ -125,6 +126,7 @@ npx -y skills update zg-persona-story-collector -g
 npx -y skills update zg-product-info-collector -g
 npx -y skills update zg-daofa-content-framework -g
 npx -y skills update zg-xuan-ti-fan-yi-qi -g
+npx -y skills update zg-hotspot-theory -g
 ```
 
 更新只会同步 Skill 文件。你在对话中提供的材料和 Agent 中的其他个人数据，不属于本仓库的更新范围。
@@ -276,6 +278,20 @@ ZG Skills 的重点不是一次给出尽可能多的建议，而是处理此刻�
 - “把这个选题改成现象、观点、方法的反常识公众号文章。”
 
 常见产出：反常识标题 → 现象小标题 → 观点小标题 → 方法小标题 → 金句结尾。
+
+### 热点加专业skill
+
+`$zg-hotspot-theory`
+
+把当天八卦、社会或商业热点，用传播学、心理学或经济学经典理论拆解，生成 60–75 秒、手机竖屏、单人口播可直接念的短视频文案。它要求区分已知事实与待核实信息，并用一个理论完成专业收口。
+
+适合这样问：
+
+- “把这个热点写成热点加专业短视频口播。”
+- “用注意力经济拆解这个新闻，控制在 65 秒。”
+- “帮我把这条八卦改成有专业观点、但不造谣的口播稿。”
+
+常见产出：钩子标题 → 热点切片 → 理论解释 → 核心观点 → 金句结尾 → 互动钩子。
 
 ## 使用原则与边界
 

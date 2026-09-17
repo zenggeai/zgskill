@@ -1,0 +1,4 @@
+interface:
+  display_name: "热点加专业skill"
+  short_description: "把热点用经典理论拆解成可直接口播的短视频文案"
+  default_prompt: "使用 $zg-hotspot-theory，把这个热点拆成 60–75 秒、可直接口播的专业短视频文案。"
