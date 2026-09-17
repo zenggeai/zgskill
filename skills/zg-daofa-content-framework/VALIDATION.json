@@ -1,0 +1,79 @@
+{
+  "package": "daofa-content-framework",
+  "version": "0.1.0",
+  "checked_on": "2026-09-16",
+  "check_type": "static_files_only",
+  "result": "pass",
+  "checks": [
+    "SKILL.md frontmatter parses; name and description present",
+    "skill name matches top-level folder",
+    "all SKILL.md relative resource links exist and stay within package",
+    "agents/openai.yaml parses and refers to correct explicit skill name",
+    "UTF-8 files readable; no broken replacement characters",
+    "standalone files do not contain conversation-only citation markers",
+    "main instructions include optional philosophy and stage confirmations",
+    "runtime student output is separate from installed skill files",
+    "main instructions are below 500 lines",
+    "no executable installation scripts, original PDF, or live student records bundled"
+  ],
+  "codex_end_to_end_run": false,
+  "real_student_tested": false,
+  "manual_scenarios_status": "12 scenarios supplied; not executed",
+  "skill_lines": 111,
+  "files_checked": 10,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 7473,
+      "sha256": "093ea15b60128647b8aaf6be0bc3b16284c77952f6bab12bff80b035bbdd2d92"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 9976,
+      "sha256": "948be5f980d1dd6930eff4b5a2ad0ddb32693f2a9136b068a57bfc4a570341ea"
+    },
+    {
+      "path": "TESTING.md",
+      "bytes": 4672,
+      "sha256": "756676aa97edeb6d05ac9e3f27603eb797e99aa1f29b8c696def3284b8738ace"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "bytes": 442,
+      "sha256": "06e96f33659f66f2dd576ec46b0df0a30cd2d660b4745e83ea0d25f14e28f126"
+    },
+    {
+      "path": "assets/framework-template.md",
+      "bytes": 2111,
+      "sha256": "6d7606fded1ae164355f4e315d90957a25e0386b44bb2e4dc2bbd0acf0594cf0"
+    },
+    {
+      "path": "assets/progress-template.md",
+      "bytes": 1731,
+      "sha256": "ddc89a961d6d3290a1e572ad97e5f5f35d3a021a7cc226006ca4cd2ab46007f6"
+    },
+    {
+      "path": "references/classification-rules.md",
+      "bytes": 4450,
+      "sha256": "46ad2a721603b510baa81e73ad28efbb6cbcf5de43508243e0e6e09ae617954f"
+    },
+    {
+      "path": "references/example-dialogue.md",
+      "bytes": 3712,
+      "sha256": "624d1f1eefa8eb4c37e9d4f8d1631ed8599d4c7c8cf4aeca455a2e757c34aae6"
+    },
+    {
+      "path": "references/interview-guide.md",
+      "bytes": 5568,
+      "sha256": "d4c09c8e6b82989220633f483ab00ffb4bd3a47e6a536f08ca7a4d43146d0ef1"
+    },
+    {
+      "path": "references/zengge-reference.md",
+      "bytes": 2548,
+      "sha256": "16ad1397862097eec6196c505a65def56ea215fc274e8dfedb8238b8838cb467"
+    }
+  ],
+  "limitations": [
+    "File checks do not establish model behavior, runtime permissions, UI discovery, or teaching effectiveness."
+  ]
+}

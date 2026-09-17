@@ -2,7 +2,7 @@
 
 > 面向创业者、一人公司和内容创作者的中文 AI Skills。把真实处境、业务材料和当前卡点交给 Agent，获得清晰判断、可直接使用的交付物，以及一个能立刻开始的下一步。
 
-[![Skills](https://img.shields.io/badge/Skills-7-111111.svg)](#skill-全目录)
+[![Skills](https://img.shields.io/badge/Skills-8-111111.svg)](#skill-全目录)
 [![skills.sh](https://skills.sh/b/zenggeai/zgskill)](https://skills.sh/zenggeai/zgskill)
 [![GitHub stars](https://img.shields.io/github/stars/zenggeai/zgskill?style=flat&color=111111)](https://github.com/zenggeai/zgskill/stargazers)
 
@@ -74,6 +74,7 @@ $zg-socratic-problem-locator
 | 设计一组连续内容 | `$zg-seed-content-8-methods` | 内容布局、术式交替和 7 条最小排期 |
 | 一句话生成公众号文章并保存到草稿箱 | `$zg-wewrite` | 选题、框架、正文、SEO、配图、排版与草稿箱 |
 | 写反常识公众号长文 | `$zg-counterintuitive-wechat-article` | 标题、现象、观点、方法和金句收尾 |
+| 梳理个人定位与长期内容框架 | `$zg-daofa-content-framework` | 核心服务问题与道法术器二级内容框架 |
 | 从模糊困惑、异常结果或草率归因中定位真问题 | `$zg-socratic-problem-locator` | 当前断点、被推翻解释、关键未知和最小验证动作 |
 
 ## 安装
@@ -99,6 +100,7 @@ npx -y skills add zenggeai/zgskill -g --skill zg-socratic-problem-locator
 npx -y skills add zenggeai/zgskill -g --skill zg-customer-case-collector
 npx -y skills add zenggeai/zgskill -g --skill zg-persona-story-collector
 npx -y skills add zenggeai/zgskill -g --skill zg-product-info-collector
+npx -y skills add zenggeai/zgskill -g --skill zg-daofa-content-framework
 ```
 
 ### 先查看可安装的 Skills
@@ -119,6 +121,7 @@ npx -y skills update zg-socratic-problem-locator -g
 npx -y skills update zg-customer-case-collector -g
 npx -y skills update zg-persona-story-collector -g
 npx -y skills update zg-product-info-collector -g
+npx -y skills update zg-daofa-content-framework -g
 ```
 
 更新只会同步 Skill 文件。你在对话中提供的材料和 Agent 中的其他个人数据，不属于本仓库的更新范围。
@@ -309,6 +312,11 @@ zgskill/
     ├── zg-product-info-collector/
     │   ├── SKILL.md
     │   └── agents/openai.yaml
+    ├── zg-daofa-content-framework/
+    │   ├── SKILL.md
+    │   ├── agents/openai.yaml
+    │   ├── references/
+    │   └── assets/
 └── README.md
 ```
 
