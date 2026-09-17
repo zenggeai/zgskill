@@ -1,0 +1,4 @@
+interface:
+  display_name: "选题翻译器"
+  short_description: "把真实素材翻译成有证据、有判断、有商业去向的短视频选题"
+  default_prompt: "使用 $zg-xuan-ti-fan-yi-qi，区分事实、推断和待补证据，把下面素材翻译成最值得生产的短视频选题："

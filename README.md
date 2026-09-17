@@ -2,7 +2,7 @@
 
 > 面向创业者、一人公司和内容创作者的中文 AI Skills。把真实处境、业务材料和当前卡点交给 Agent，获得清晰判断、可直接使用的交付物，以及一个能立刻开始的下一步。
 
-[![Skills](https://img.shields.io/badge/Skills-8-111111.svg)](#skill-全目录)
+[![Skills](https://img.shields.io/badge/Skills-9-111111.svg)](#skill-全目录)
 [![skills.sh](https://skills.sh/b/zenggeai/zgskill)](https://skills.sh/zenggeai/zgskill)
 [![GitHub stars](https://img.shields.io/github/stars/zenggeai/zgskill?style=flat&color=111111)](https://github.com/zenggeai/zgskill/stargazers)
 
@@ -75,6 +75,7 @@ $zg-socratic-problem-locator
 | 一句话生成公众号文章并保存到草稿箱 | `$zg-wewrite` | 选题、框架、正文、SEO、配图、排版与草稿箱 |
 | 写反常识公众号长文 | `$zg-counterintuitive-wechat-article` | 标题、现象、观点、方法和金句收尾 |
 | 梳理个人定位与长期内容框架 | `$zg-daofa-content-framework` | 核心服务问题与道法术器二级内容框架 |
+| 把真实素材翻译成可生产的短视频选题 | `$zg-xuan-ti-fan-yi-qi` | 受众、场景、矛盾、证据、判断与商业去向 |
 | 从模糊困惑、异常结果或草率归因中定位真问题 | `$zg-socratic-problem-locator` | 当前断点、被推翻解释、关键未知和最小验证动作 |
 
 ## 安装
@@ -101,6 +102,7 @@ npx -y skills add zenggeai/zgskill -g --skill zg-customer-case-collector
 npx -y skills add zenggeai/zgskill -g --skill zg-persona-story-collector
 npx -y skills add zenggeai/zgskill -g --skill zg-product-info-collector
 npx -y skills add zenggeai/zgskill -g --skill zg-daofa-content-framework
+npx -y skills add zenggeai/zgskill -g --skill zg-xuan-ti-fan-yi-qi
 ```
 
 ### 先查看可安装的 Skills
@@ -122,6 +124,7 @@ npx -y skills update zg-customer-case-collector -g
 npx -y skills update zg-persona-story-collector -g
 npx -y skills update zg-product-info-collector -g
 npx -y skills update zg-daofa-content-framework -g
+npx -y skills update zg-xuan-ti-fan-yi-qi -g
 ```
 
 更新只会同步 Skill 文件。你在对话中提供的材料和 Agent 中的其他个人数据，不属于本仓库的更新范围。
@@ -187,6 +190,20 @@ ZG Skills 的重点不是一次给出尽可能多的建议，而是处理此刻�
 - 想了解种草力 8 术的选择条件、结构模板和诊断要点，阅读 [`methods.md`](skills/zg-seed-content-8-methods/references/methods.md)。
 - 想设计连续朋友圈的内容结构与最小排期，阅读 [`content-layout.md`](skills/zg-seed-content-8-methods/references/content-layout.md)。
 - 想把“苏格拉底问题定位”方法复制给其他 AI，阅读 [`standalone-prompt.md`](skills/zg-socratic-problem-locator/references/standalone-prompt.md)。
+
+### ZG · 选题翻译器
+
+`$zg-xuan-ti-fan-yi-qi`
+
+把经历、业务现场、客户案例、观点、文章、录音摘要或日常观察，翻译成有明确受众问题、核心判断、事实证据和商业去向的短视频选题。它区分事实、推断与待补证据，不把工具、生活流水账或耸动标题误当成成熟选题，也不把完整脚本写作冒充成选题开发。
+
+适合这样问：
+
+- “把这段业务现场翻译成精准获客选题。”
+- “从我的日常观察里找 3 个能生产的选题，别编数据。”
+- “这个选题够不够成立？帮我检查证据和商业去向。”
+
+常见产出：素材判断 → 受众与矛盾 → 核心判断 → 证据缺口 → 推荐选题 → 生产状态。
 
 ## Skill 全目录
 
