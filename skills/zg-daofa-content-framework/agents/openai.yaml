@@ -1,6 +1,6 @@
 interface:
-  display_name: "道法术器内容框架教练"
-  short_description: "先找到核心服务问题，再用逐步对话搭建属于自己的道法术器内容框架"
-  default_prompt: "请使用 $zg-daofa-content-framework，先帮我搞清楚核心服务谁、解决什么问题，再一步一步搭建我的道法术器内容框架。每次只问一两个问题，指导思想不强求。"
+  display_name: "道法术器选题内容框架教练"
+  short_description: "建立个人道法术器框架，并把一个选题升级成四个维度的内容方向"
+  default_prompt: "请使用 $zg-daofa-content-framework。如果我给了一个选题，就把它从器扩展到术、法、道四个维度；如果我还没有框架，再通过逐步访谈帮我建立。不要编造事实、经历或立场。"
 policy:
   allow_implicit_invocation: true
