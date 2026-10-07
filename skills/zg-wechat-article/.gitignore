@@ -1,0 +1,12 @@
+config.yaml
+style.yaml
+history.yaml
+.env
+.env.*
+output/
+outputs/
+*.receipt.json
+article.manifest.json
+__pycache__/
+*.pyc
+.DS_Store

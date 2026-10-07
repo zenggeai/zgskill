@@ -2,7 +2,7 @@
 
 > 面向创业者、一人公司和内容创作者的中文 AI Skills。把真实处境、业务材料和当前卡点交给 Agent，获得清晰判断、可直接使用的交付物，以及一个能立刻开始的下一步。
 
-[![Skills](https://img.shields.io/badge/Skills-14-111111.svg)](#skill-全目录)
+[![Skills](https://img.shields.io/badge/Skills-15-111111.svg)](#skill-全目录)
 [![skills.sh](https://skills.sh/b/zenggeai/zgskill)](https://skills.sh/zenggeai/zgskill)
 [![GitHub stars](https://img.shields.io/github/stars/zenggeai/zgskill?style=flat&color=111111)](https://github.com/zenggeai/zgskill/stargazers)
 
@@ -80,6 +80,12 @@ $zg-lead-product-designer
 请帮我把课程主题收敛成一个客户看得见、能验收、可以规模交付的结果。
 ```
 
+```text
+$zg-wechat-article
+结合我的知识库和选题框架，围绕我给定的标题写一篇通俗、有信息密度的公众号文章。
+开头不超过200字，正文有清晰小标题。先给我审阅，确认后再保存到公众号草稿箱。
+```
+
 不知道选哪个 Skill 时，先判断你要处理的是“战略取舍”“问题尚未定位”，还是“内容的生成与表达”。
 
 ## 能力一览
@@ -92,6 +98,7 @@ $zg-lead-product-designer
 | 用九宫格把素材写成朋友圈 | `$zg-ai-nine-grid-moments` | 主格选择、事实核验、200 字内可发布成稿 |
 | 诊断客户私聊疑虑并生成下一条回复 | `$zg-private-chat-sales-assistant` | 疑虑判断、应对方法、原理和可发送话术 |
 | 设计或诊断低价课、体验营、诊断服务等引流品 | `$zg-lead-product-designer` | 主结果、验收标准、交付闭环、后端承接与验证计划 |
+| 按曾哥固定标准撰写、配图、排版并维护公众号稿 | `$zg-wechat-article` | 200字开头、小标题、场景图、固定文末与草稿回读 |
 | 一句话生成公众号文章并保存到草稿箱 | `$zg-wewrite` | 选题、框架、正文、SEO、配图、排版与草稿箱 |
 | 写反常识公众号长文 | `$zg-counterintuitive-wechat-article` | 标题、现象、观点、方法和金句收尾 |
 | 判断目标、产品、方向、合作或同行证据 | `$zg-ai-strategy-expert` | 真正决策、正反论证、倾向、信心和改判条件 |
@@ -116,6 +123,7 @@ npx -y skills add zenggeai/zgskill -g --all
 ```bash
 npx -y skills add zenggeai/zgskill -g --skill zg-seed-content-8-methods
 npx -y skills add zenggeai/zgskill -g --skill zg-wewrite
+npx -y skills add zenggeai/zgskill -g --skill zg-wechat-article
 npx -y skills add zenggeai/zgskill -g --skill zg-counterintuitive-wechat-article
 npx -y skills add zenggeai/zgskill -g --skill zg-socratic-problem-locator
 npx -y skills add zenggeai/zgskill -g --skill zg-customer-case-collector
@@ -143,6 +151,7 @@ npx -y skills add zenggeai/zgskill --list
 ```bash
 npx -y skills update zg-seed-content-8-methods -g
 npx -y skills update zg-wewrite -g
+npx -y skills update zg-wechat-article -g
 npx -y skills update zg-counterintuitive-wechat-article -g
 npx -y skills update zg-socratic-problem-locator -g
 npx -y skills update zg-customer-case-collector -g
@@ -215,6 +224,7 @@ ZG Skills 的重点不是一次给出尽可能多的建议，而是处理此刻�
 
 仓库中每个 Skill 都将核心工作流程放在 `SKILL.md` 中，将只在特定场景才需要的详细方法放在 `references/` 中。Agent 会在需要时按需读取，避免每次调用都加载全部内容。
 
+- 想套用曾哥的公众号开头、正文与图中文字结构，阅读 [`writing-and-images.md`](skills/zg-wechat-article/references/writing-and-images.md)。
 - 想了解种草力 8 术的选择条件、结构模板和诊断要点，阅读 [`methods.md`](skills/zg-seed-content-8-methods/references/methods.md)。
 - 想设计连续朋友圈的内容结构与最小排期，阅读 [`content-layout.md`](skills/zg-seed-content-8-methods/references/content-layout.md)。
 - 想了解朋友圈九宫格的九个主格与组合边界，阅读 [`nine-grid-marketing.md`](skills/zg-ai-nine-grid-moments/references/nine-grid-marketing.md)。
@@ -328,6 +338,22 @@ ZG Skills 的重点不是一次给出尽可能多的建议，而是处理此刻�
 
 常见产出：目标读者与第一目标 → 九宫格主格 → 事实边界检查 → 200 字内可发布成稿。
 
+### 曾哥公众号 Skill
+
+`$zg-wechat-article`
+
+将本人的专业判断和业务素材写成通俗、有信息密度的公众号文章。默认开头不超过200字、原标题不擅改、正文有清晰小标题；开场后配原标题场景图，每个正文小节末尾配带相关文字的实景风格图片，文末统一署名、强调色和空行。先交稿审阅，获授权后保存或更新同一篇公众号草稿，并回读检查。
+
+适合这样问：
+
+- “围绕这个原标题写公众号文章，开头200字以内，普通客户能看懂。”
+- “正文信息密度不够，补上判断依据、具体对照和可以马上做的动作。”
+- “把这篇放入草稿箱，之后按我的修改继续同步同一篇。”
+
+固定文末是曾哥的品牌预设。其他作者使用时可明确提供自己的文末模板和署名；知识库、公众号账号配置、密钥与已生成文章不包含在公开包内。Python辅助工具支持本地排版、检查和获授权的草稿回读，操作方法见[草稿交付流程](skills/zg-wechat-article/references/draft-workflow.md)。
+
+常见产出：短开头与正文 → 标题图和小节图 → 微信排版预览 → 固定文末 → 草稿保存与回读结果。
+
 ### WeWrite · 公众号文章全流程
 
 `$zg-wewrite`
@@ -417,6 +443,12 @@ zgskill/
 │   ├── zg-product-info-collector/
 │   ├── zg-seed-content-8-methods/
 │   ├── zg-socratic-problem-locator/
+│   ├── zg-wechat-article/
+│   │   ├── SKILL.md
+│   │   ├── agents/openai.yaml
+│   │   ├── references/
+│   │   ├── scripts/
+│   │   └── assets/
 │   ├── zg-wewrite/
 │   └── zg-xuan-ti-fan-yi-qi/
 └── README.md
