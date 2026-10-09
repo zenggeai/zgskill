@@ -1,4 +1,4 @@
 interface:
   display_name: "曾哥公众号 Skill"
-  short_description: "按曾哥确认的标准生成公众号文章、场景配图、固定文末并保存草稿"
-  default_prompt: "使用 $zg-wechat-article，结合我的知识库和选题框架写一篇通俗、有信息密度的公众号文章，先给我审阅。"
+  short_description: "按曾哥标准优化公众号转发、阅读节奏、互动与搜索，配图并保存草稿"
+  default_prompt: "使用 $zg-wechat-article，根据我已经确定的选题，结合相关素材写一篇通俗、有信息密度、值得转发的公众号文章，包含自然关键词和文末讨论问题，先给我审阅。"
