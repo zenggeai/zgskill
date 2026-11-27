@@ -1,0 +1,6 @@
+interface:
+  display_name: "曾哥剪辑 Skill"
+  short_description: "把真人口播剪成带字幕、配图、导航、音乐、封面并完成验收的竖屏成片"
+  default_prompt: "请使用 $zg-video-editor，把我提供的真人口播视频制作成可发布的完整竖屏成片。保留我指定的核心内容，完成转写、剪辑、字幕校对、真实素材、章节导航、低音量配乐、平台封面、导出和验收；不要只给方案。"
+policy:
+  allow_implicit_invocation: true

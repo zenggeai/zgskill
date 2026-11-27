@@ -2,7 +2,7 @@
 
 > 面向创业者、一人公司和内容创作者的中文 AI Skills。把真实处境、业务材料和当前卡点交给 Agent，获得清晰判断、可直接使用的交付物，以及一个能立刻开始的下一步。
 
-[![Skills](https://img.shields.io/badge/Skills-15-111111.svg)](#skill-全目录)
+[![Skills](https://img.shields.io/badge/Skills-16-111111.svg)](#skill-全目录)
 [![skills.sh](https://skills.sh/b/zenggeai/zgskill)](https://skills.sh/zenggeai/zgskill)
 [![GitHub stars](https://img.shields.io/github/stars/zenggeai/zgskill?style=flat&color=111111)](https://github.com/zenggeai/zgskill/stargazers)
 
@@ -99,6 +99,7 @@ $zg-wechat-article
 | 获客与营销 | 公众号 | 写反常识公众号长文 | `$zg-counterintuitive-wechat-article` | 标题、现象、观点、方法和金句收尾 |
 | 获客与营销 | 短视频 | 把真实素材翻译成可生产的短视频选题 | `$zg-xuan-ti-fan-yi-qi` | 受众、场景、矛盾、证据、判断与商业去向 |
 | 获客与营销 | 短视频 | 把热点结合专业理论写成短视频口播 | `$zg-hotspot-theory` | 钩子标题、热点切片、理论解释与 60–75 秒口播稿 |
+| 获客与营销 | 短视频 | 把真人口播原片制作成可发布的完整竖屏成片 | `$zg-video-editor` | 转写、剪辑、字幕、真实配图、章节导航、配乐、平台封面与验收记录 |
 | 获客与营销 | 朋友圈 | 从零生成朋友圈、私域或个人品牌内容 | `$zg-seed-content-8-methods` | 术式选择、可发布成稿、待核实项 |
 | 获客与营销 | 朋友圈 | 改写或诊断已有文案 | `$zg-seed-content-8-methods` | 单一目标、问题优先级、局部修改示例 |
 | 获客与营销 | 朋友圈 | 设计一组连续内容 | `$zg-seed-content-8-methods` | 内容布局、术式交替和 7 条最小排期 |
@@ -142,6 +143,7 @@ npx -y skills add zenggeai/zgskill -g --skill zg-ai-nine-grid-moments
 npx -y skills add zenggeai/zgskill -g --skill zg-ai-strategy-expert
 npx -y skills add zenggeai/zgskill -g --skill zg-private-chat-sales-assistant
 npx -y skills add zenggeai/zgskill -g --skill zg-lead-product-designer
+npx -y skills add zenggeai/zgskill -g --skill zg-video-editor
 ```
 
 ### 先查看可安装的 Skills
@@ -170,6 +172,7 @@ npx -y skills update zg-ai-nine-grid-moments -g
 npx -y skills update zg-ai-strategy-expert -g
 npx -y skills update zg-private-chat-sales-assistant -g
 npx -y skills update zg-lead-product-designer -g
+npx -y skills update zg-video-editor -g
 ```
 
 更新只会同步 Skill 文件。你在对话中提供的材料和 Agent 中的其他个人数据，不属于本仓库的更新范围。
@@ -243,6 +246,7 @@ ZG Skills 的重点不是一次给出尽可能多的建议，而是处理此刻�
 - 想判断成交阶段、疑虑类别和应对方法，阅读 [`method-library.md`](skills/zg-private-chat-sales-assistant/references/method-library.md)。
 - 想把课程主题、渠道和工具收敛成可验收结果，阅读 [`result-design.md`](skills/zg-lead-product-designer/references/result-design.md)。
 - 想比较多个引流品候选并设计小样本测试，阅读 [`scoring-and-validation.md`](skills/zg-lead-product-designer/references/scoring-and-validation.md)。
+- 想了解真人口播从转写、配图、导航、配乐到最终验收的完整制作标准，阅读 [`production-contract.md`](skills/zg-video-editor/references/production-contract.md)。
 
 ### ZG · 选题翻译器
 
@@ -402,6 +406,20 @@ ZG Skills 的重点不是一次给出尽可能多的建议，而是处理此刻�
 
 常见产出：钩子标题 → 热点切片 → 理论解释 → 核心观点 → 金句结尾 → 互动钩子。
 
+### 曾哥剪辑 Skill
+
+`$zg-video-editor`
+
+把真人口播、访谈或知识类原片制作成可发布的中文竖屏成片。它会先检查媒体参数并转写，再完成剪辑、字幕校对、事实核验、真实配图、章节导航、低音量配乐和平台封面；最后通过完整解码、抽帧、音画同步和响度测量验收。它不把“给出方案”“创建空项目”或“开始导出”当成完成，某个剪辑插件失败时会切换到可用的本地流程继续交付。
+
+适合这样问：
+
+- “把这段真人口播剪成视频号成片，完整保留三个观点，补真实配图和无歌词配乐。”
+- “给这条五分钟知识视频增加字幕、章节进度条，并做9:16和3:4两版封面。”
+- “继续修改现有成片，修正人物资料图和字幕，然后重新验收导出。”
+
+常见产出：最终 MP4 → SRT 字幕 → 章节时间表 → 素材来源表 → 9:16/3:4 封面 → EDL 与验收记录。未经用户明确要求，不上传或发布到社交平台。
+
 ## 使用原则与边界
 
 - 先给真实处境、真实材料和真实目标；信息不足时，Skill 会保留事实空位，而不是自行补齐。
@@ -412,6 +430,7 @@ ZG Skills 的重点不是一次给出尽可能多的建议，而是处理此刻�
 - `zg-ai-strategy-expert` 给出倾向但不替用户决定；动态经营数据和市场事实需要当次核验，未经确认不会写入长期决策记录。
 - `zg-private-chat-sales-assistant` 必须先获得产品与目标客户信息；客户明确拒绝或要求停止联系时，会停止推进并尊重边界。
 - `zg-lead-product-designer` 不把课程目录、工具功能或低价本身当成客户结果；不设计故意残缺的升单诱饵，也不把收入、成交和涨粉写成无条件保证。
+- `zg-video-editor` 不伪造新闻截图、人物现场或数据，不把资料图冒充事件现场；原片上传第三方服务前取得具体授权，成片必须完成解码、字幕、画面和音频验收。
 
 ## 开源路线图：一人公司的 AI 员工
 
@@ -449,6 +468,10 @@ zgskill/
 │   ├── zg-product-info-collector/
 │   ├── zg-seed-content-8-methods/
 │   ├── zg-socratic-problem-locator/
+│   ├── zg-video-editor/
+│   │   ├── SKILL.md
+│   │   ├── agents/openai.yaml
+│   │   └── references/
 │   ├── zg-wechat-article/
 │   │   ├── SKILL.md
 │   │   ├── agents/openai.yaml
